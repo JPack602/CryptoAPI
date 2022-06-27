@@ -11,7 +11,7 @@ int DumpBin(char* lpComment, void* lpTarget, size_t ullSize)
     printf("%s\n", lpComment);
 
     for (size_t i = 0; i < ullSize; i++) {
-        printf("0x%02X, ", lpBuf[i]);
+        printf("%02X ", lpBuf[i]);
 
         if ((i + 1) % 16 == 0) {
             puts("");
